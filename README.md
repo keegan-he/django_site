@@ -7,6 +7,4 @@
 * build API request package to host projects on website
 * heroku implementation
 
-https://i.imgur.com/bA3Rn7E.gif
-
 ![me-ow](https://i.imgur.com/bA3Rn7E.gif)
