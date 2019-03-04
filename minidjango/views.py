@@ -36,11 +36,11 @@ def github_api_example(request):
 
 
 def about(request):
-    content_html = open('content/about.html').read() 
+    content_html = open('content/about.html').read()
     context = {
-        'about': content_html, 
+        'about': content_html,
     }
-    return render(request, 'base.html', context)
+    return render(request,'base.html', context)
 
 def photography(request):
     content_html = open('content/photography.html').read()
