@@ -5,6 +5,7 @@ import views
 # In this example, we've separated out the views.py into a new file
 urlpatterns = [
     path('', views.index),
+    path('about_me', views.about_me),
     path('about', views.about),
     path('photography', views.photography),
     path('projects', views.projects),
