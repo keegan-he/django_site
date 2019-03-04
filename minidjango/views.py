@@ -69,3 +69,10 @@ def index(request):
         'index': content_html, 
     }
     return render(request, 'base.html', context)
+
+def music(request):
+    content_html = open('content/music.html').read()
+    context = {
+        'music': content_html, 
+    }
+    return render(request, 'base.html', context)

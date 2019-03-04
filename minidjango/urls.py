@@ -11,6 +11,7 @@ urlpatterns = [
     path('projects', views.projects),
     path('contact', views.contact),
     path('index', views.index),
+    path('music', views.music),
     path('github-api-example', views.github_api_example),
 ]
 
