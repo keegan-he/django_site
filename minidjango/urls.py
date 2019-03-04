@@ -7,6 +7,9 @@ urlpatterns = [
     path('', views.index),
     path('about', views.about),
     path('photography', views.photography),
+    path('projects', views.projects),
+    path('contact', views.contact),
+    path('index', views.index),
     path('github-api-example', views.github_api_example),
 ]
 
