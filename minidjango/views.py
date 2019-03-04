@@ -8,7 +8,8 @@ def index(request):
     # the HTML embedded here.
     return HttpResponse('''
         <h1>Welcome to my home page!</h1>
-        <a href="/about">About me</a> <br />
+        <a href="about">About me</a> <br />
+        <a href="photography">photography</a> <br />
         <a href="/github-api-example">See my GitHub contributions</a> <br />
     ''')
 
@@ -35,7 +36,15 @@ def github_api_example(request):
 
 
 def about(request):
-    content_html = open("content/about.html").read() 
+    content_html = open('content/about.html').read() 
     context = {
-        "about": content_html, }
-    return render(request, "base.html", context)
+        'about': content_html, 
+    }
+    return render(request, 'base.html', context)
+
+def photography(request):
+    content_html = open('content/photography.html').read()
+    context = {
+    'photography': content_html, 
+    }
+    return render(request, 'base.html', context)
