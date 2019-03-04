@@ -8,7 +8,7 @@ def index(request):
     # the HTML embedded here.
     return HttpResponse('''
         <h1>Welcome to my home page!</h1>
-        <a href="/about-me">About me</a> <br />
+        <a href="/about">About me</a> <br />
         <a href="/github-api-example">See my GitHub contributions</a> <br />
     ''')
 
@@ -26,10 +26,16 @@ def about_me(request):
 
 def github_api_example(request):
     # We can also combine Django with APIs
-    response = requests.get('https://api.github.com/users/michaelpb/repos')
+    response = requests.get('https://api.github.com/users/keegan-he/repos')
     repos = response.json()
     context = {
         'github_repos': repos,
     }
     return render(request, 'github.html', context)
 
+
+def about(request):
+    content_html = open("content/about.html").read() 
+    context = {
+        "about": content_html, }
+    return render(request, "base.html", context)
