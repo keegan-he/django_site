@@ -33,7 +33,7 @@ def github_api_example(request):
     context = {
         'github_repos': repos,
     }
-    return render(request, 'github-api-example', context)
+    return render(request, 'github.html', context)
 
 
 def about(request):
