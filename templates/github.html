@@ -16,12 +16,13 @@
             <h1>My github repos</h1>
             <ol>
             {% for repo in github_repos %}
-                <li>{{ repo.name }} 
+                <li>{{ repo.name }}
                 <br/>{{ repo.description }}
-                <br/>{{ repo.html_url }}
-                </li>
+                <br/><a href="{{ repo.html_url }}">See Project</a>
                 {% comment %} <li>{{ repo.url }}</li> {% endcomment %}
             {% endfor %}
+
+            {% comment %} <a href="https://www.w3schools.com">Visit W3Schools.com!</a> {% endcomment %}
             </ol>
         </div>
       </div>
