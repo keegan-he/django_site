@@ -37,43 +37,25 @@ def github_api_example(request):
 
 
 def about(request):
-    content_html = open('content/about.html').read()
-    context = {
-        'about': content_html,
-    }
-    return render(request,'base.html', context)
+    context = {}
+    return render(request,'about.html', context)
 
 def photography(request):
-    content_html = open('content/photography.html').read()
-    context = {
-        'photography': content_html, 
-    }
-    return render(request, 'base.html', context)
+    context = {}
+    return render(request, 'photography.html', context)
 
 def projects(request):
-    content_html = open('content/projects.html').read()
-    context = {
-        'projects': content_html, 
-    }
-    return render(request, 'base.html', context)
+    context = {}
+    return render(request, 'projects.html', context)
 
 def contact(request):
-    content_html = open('content/contact.html').read()
-    context = {
-        'contact': content_html, 
-    }
-    return render(request, 'base.html', context)
+    context = {}
+    return render(request, 'contact.html', context)
 
 def index(request):
-    content_html = open('content/index.html').read()
-    context = {
-        'index': content_html, 
-    }
-    return render(request, 'base.html', context)
+    context = {}
+    return render(request, 'index.html', context)
 
 def music(request):
-    content_html = open('content/music.html').read()
-    context = {
-        'music': content_html, 
-    }
-    return render(request, 'base.html', context)
+    context = {}
+    return render(request, 'music.html', context)
