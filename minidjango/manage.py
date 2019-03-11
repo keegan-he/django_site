@@ -1,4 +1,4 @@
-# This is all boilerplate, don't touch this file for now!
+
 import sys
 import os
 from django.conf import settings
