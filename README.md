@@ -1,6 +1,6 @@
 # Personal Django Site
 
-## hosted on Heroku here: https://nameless-reaches-70166.herokuapp.com/index
+## Deployed on Heroku here: https://nameless-reaches-70166.herokuapp.com/index
 
 ## Todo:
 * ~add cat gif to readme~
